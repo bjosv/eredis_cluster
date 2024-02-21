@@ -11,7 +11,25 @@ jobs:
       fail-fast: false
       matrix:
         include: # See https://www.erlang-solutions.com/downloads/
+          - otp-version: '25.3'
+            platform: ubuntu-20.04
+            lsb_release: focal
+          - otp-version: '25.2'
+            platform: ubuntu-20.04
+            lsb_release: focal
+          - otp-version: '25.1'
+            platform: ubuntu-20.04
+            lsb_release: focal
           - otp-version: 25.0.3
+            platform: ubuntu-20.04
+            lsb_release: focal
+          - otp-version: '25.0.2'
+            platform: ubuntu-20.04
+            lsb_release: focal
+          - otp-version: '25.0.1'
+            platform: ubuntu-20.04
+            lsb_release: focal
+          - otp-version: '25.0'
             platform: ubuntu-20.04
             lsb_release: focal
           - otp-version: 24.3.3
